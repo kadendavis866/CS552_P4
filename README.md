@@ -1,6 +1,8 @@
-# Makefile Project Template
+# CS 552 Operating Systems Project 4
 
-Steps to configure, build, run, and test the project.
+This project contains a Rust implementation of a thread-safe bounded queue. If the queue is empty, dequeue() will block until either an enqueue operation is performed or the queue is shutdown. Similarly, enqueue() will block if there is no room in the buffer.
+
+The queue is implemented using a circular buffer Vec. This allows for push and pop operations to be performed without shifting elements as well as fast length checking.
 
 ## Building
 
@@ -22,8 +24,8 @@ make clean
 
 ## Install Dependencies
 
-In order to use git send-mail you need to run the following command:
+If needed, the rust build system (rustup and cargo) can be installed/updated by running the following command:
 
 ```bash
-make install-deps
+sudo make install-deps
 ```

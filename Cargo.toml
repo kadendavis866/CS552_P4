@@ -1,0 +1,9 @@
+[package]
+name = "P4"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gettid = "0.1.3"
+rand = "0.9.1"
+getopt = "1.1.7"
